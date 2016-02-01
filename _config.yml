@@ -1,0 +1,8 @@
+# Site settings
+title: Musical Chairs for Slack
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://mchairs.chat" # the base hostname & protocol for your site
+github_username: mchairs
+
+# Build settings
+markdown: kramdown
