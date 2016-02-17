@@ -154,8 +154,9 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
-    max-width:         calc(800px - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc(1200px - (#{$spacing-unit} * 2));
+    max-width:         calc(1200px - (#{$spacing-unit} * 2));
+    margin-top: $spacing-unit * 2 ;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -202,3 +203,67 @@ pre {
         }
     }
 }
+
+/**
+ * GIF
+ */
+ .animated-gif {
+
+    max-width: -webkit-calc(450px - (#{$spacing-unit}));
+    max-width:         calc(450px - (#{$spacing-unit}));
+    margin-left: $spacing-unit * 3;
+    margin-right: auto;
+    margin-top: $spacing-unit * 3;
+
+    @include media-query($on-laptop) {
+        margin-left: auto;
+    }
+
+ }
+
+ /**
+  * STYLING
+  */
+
+.rules{
+    background-color: $brand-color;
+    color: $grey-color-dark;
+    .wrapper{
+        text-align: center;
+        padding-top: $spacing-unit * 2;
+        img{
+             max-width: -webkit-calc(800px - (#{$spacing-unit}));
+             max-width:         calc(800px - (#{$spacing-unit}));
+             margin-top: $spacing-unit * 2;
+             margin-bottom: $spacing-unit * 3;
+        }
+    }
+    .rules-navi{
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        div{
+            padding: $spacing-unit;
+            width: $spacing-unit * 3;
+            float: left;
+        }
+    }
+}
+
+  b{
+    color: $brand-color;
+  }
+
+  .intro-content{
+    max-width: -webkit-calc(950px - (#{$spacing-unit}));
+    max-width:         calc(950px - (#{$spacing-unit}));
+    margin-left: $spacing-unit * 3;
+    margin-right: auto;
+    margin-top: $spacing-unit * 2;
+    margin-bottom: $spacing-unit * 4;
+
+    @include media-query($on-laptop) {
+        margin-left: auto;
+        text-align: center;
+    }
+  }
