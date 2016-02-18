@@ -4,6 +4,7 @@ enforce_ssl: mchairs.chat
 title: Musical Chairs for Slack
 baseurl: ""
 github_username: mchairs
+twitter_username: mchairs_chat
 
 # Build settings
 markdown: kramdown
