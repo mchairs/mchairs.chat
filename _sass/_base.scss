@@ -236,16 +236,24 @@ pre {
              max-width:         calc(800px - (#{$spacing-unit}));
              margin-top: $spacing-unit * 2;
              margin-bottom: $spacing-unit * 3;
+            @include media-query($on-laptop +30) {
+                 max-width: 100%;
+            }
         }
     }
     .rules-navi{
-        width: 450px;
+        max-width: 450px;
         margin-left: auto;
         margin-right: auto;
         div{
             padding: $spacing-unit;
             width: $spacing-unit * 3;
             float: left;
+             @include media-query($on-laptop +30) {
+                 padding-left:0;
+                 padding-right: 0;
+                 width: 33%;
+            }
         }
     }
 }
