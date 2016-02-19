@@ -225,6 +225,19 @@ pre {
   * STYLING
   */
 
+footer{
+
+    .wrapper{
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
+.addtoslack-btn{
+    margin-top: $spacing-unit;
+   
+}
+
 .rules{
     background-color: $brand-color;
     color: $grey-color-dark;
